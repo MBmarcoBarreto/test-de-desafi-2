@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* header seccion */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5px 0 5px;
+}
+h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    font-family: "Cinzel", serif;
+}
+
+h1{
+    font-size: 53px;
+    margin-bottom: 15px;
+    font-family: "Cinzel", serif;
+}
+
+p {
+    margin-bottom: 20px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.acceso {
+    flex: 1;
+}
+nav {
+    flex: 2;
+
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #cc0040; 
+    font-size: 30px;
+}
+
+.nav-links input[type="search"] {
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff004f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+   margin: 10px;
+}
+
+.btn:hover {
+    background-color: #cc0040;
+}
+   /* fin de la seccion de header */
+
+
+    /* banner seccion */
+.banner {
+    position: relative;
+    flex: 1; 
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.fondo-texto{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 60px;
+    border-radius: 15px;
+    
+}
+.banner1{
+    height: 600px;
+    background-image: url(img/banner1);
+    margin: 16px 0 0 0;
+
+    .fondo-texto{
+        padding: 200px 380px;
+    }
+}
+
+.banner2{
+    background-image: url(img/banner2.jpg);
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.banner3{
+    background-image: url(img/banner3.jpg);
+    border-radius: 20px;
+    width: 94.6%;
+    margin: 40px 0;
+}
+
+.banner4{
+    background-image: url(img/banner4.jpg);
+    margin: 40px 0;
+   
+}
+ 
+.contenedor {
+    display: grid;
+    grid-template-columns: 32% 68%;  /* espacio que ocupa las dos columnas  */
+    gap: 50px; /* espacio entre las columnas */
+    width: 100%; 
+    max-width: 2000px; 
+    margin: 0 auto; 
+}
+
+  /* fin de la seccion de banner */
+ 
+
+  /* seccion de los mas vendidos */
+.section-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.linea {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 100%;
+    max-width: 550px;
+}
+
+.seccion-titulo {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #cc0040;
+}
+
+.ofertas-contenedor {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.oferta-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: left;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.card-content {
+    padding: 15px;
+
+    h2 {
+        font-size: 1.25rem;
+        margin: 0;
+    }
+}
+
+.tags {
+    margin: 10px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.economy {
+    background-color: #cc0040;
+}
+
+.millas {
+    background-color: #ffd700;
+    color: #444;
+}
+
+.precio-info {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.anterior-precio {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.nuevo-precio {
+    font-size: 1.5rem;
+    color:#cc0040;
+    font-weight: bold;
+}
+
+.descuento {
+    font-size: 1rem;
+    color: #555;
+}
+
+.tasas{
+    font-size: 0.8rem;
+    color: #888;
+}
+ /* fin de la seccion de los mas vendidos */
+    
+
+   /* seccion del footer */
+footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+  
+.footer-contenedor{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+  
+.footer-seccion{
+    width: 20%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    img{
+        height: 220px;
+    }
+
+    h4 {
+        border-bottom: 2px solid #777;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+      p {
+        margin: 10px 0;
+    }
+}
+.footer-seccion ul {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.footer-seccion ul li {
+    margin: 8px 0;
+}
+  
+.footer-seccion ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+  
+.footer-seccion ul li a:hover {
+    color: #cc0040;
+}
+  
+.social-iconos{
+    display: flex;
+    gap: 10px;
+}
+  
+.social-iconos a img {
+    width: 24px;
+    height: 24px;
+}
+  
+.footer-copy {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #777;
+    margin-top: 20px;
+
+    p {
+        margin: 0;
+        font-size: 14px;
+      }
+}
+  
+  
+
+
